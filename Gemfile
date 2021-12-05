@@ -22,14 +22,15 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# Make errors better looking
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
 # bulma css
 gem 'bulma-rails', '~> 0.9.2'
@@ -37,7 +38,8 @@ gem 'bulma-rails', '~> 0.9.2'
 # Simple form
 gem 'simple_form', '~> 5.1'
 
-
+#wdm
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 
 group :development, :test do
@@ -54,7 +56,9 @@ group :development do
   # Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.18'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', require: false
+  # Make errors better looking
+gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :test do

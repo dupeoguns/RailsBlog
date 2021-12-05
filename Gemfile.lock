@@ -221,6 +221,7 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2021.5)
       tzinfo (>= 1.0.0)
+    wdm (0.1.1)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -252,7 +253,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   guard (~> 2.18)
-  guard-livereload (~> 2.5, >= 2.5.2)
+  guard-livereload (~> 2.5)
   jbuilder (~> 2.7)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
@@ -263,6 +264,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
+  wdm (>= 0.1.0)
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)
