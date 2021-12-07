@@ -13,9 +13,13 @@
                     </div>
                     <div class="content">
                         <%= post.content %>
+                        <small>Created by: <%= post.user.username if post.user %>,
+                            <%= time_ago_in_words(post.created_at) %> ago, last updated: <%= time_ago_in_words(post.updated_at) %> ago
+                        </small>
                     </div>
                 </div>
             </div>
         <% end %>
    </div> 
 </section>
+

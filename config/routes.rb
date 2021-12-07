@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   end
 
   root "posts#index"
-
+  get 'signup', to: 'users#new'
+  
 end

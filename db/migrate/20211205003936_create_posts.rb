@@ -7,4 +7,7 @@ class CreatePosts < ActiveRecord::Migration[6.1]
       t.timestamps
     end
   end
+
+  def has_secure_password
+  end
 end
