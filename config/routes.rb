@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
+  resources :users, except: [:new]
 
   root "posts#index"
   get 'signup', to: 'users#new'
-  
+
 end

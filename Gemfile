@@ -6,7 +6,7 @@ ruby '2.7.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -41,6 +41,9 @@ gem 'simple_form', '~> 5.1'
 #wdm
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
+#for password method
+gem 'bcrypt', '~> 3.1', '>= 3.1.16'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,7 +61,7 @@ group :development do
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', require: false
   # Make errors better looking
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :test do
