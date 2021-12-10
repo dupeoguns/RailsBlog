@@ -14,6 +14,11 @@ class UsersController < ApplicationController
         end
     end
 
+    def destroy
+        @user.destroy
+        redirect_to posts_path
+    end
+
     private
 
     def user_params

@@ -41,10 +41,6 @@ gem 'simple_form', '~> 5.1'
 #wdm
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
-#for password method
-gem 'bcrypt', '~> 3.1', '>= 3.1.16'
-
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
