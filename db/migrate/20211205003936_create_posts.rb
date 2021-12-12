@@ -8,6 +8,6 @@ class CreatePosts < ActiveRecord::Migration[6.1]
     end
   end
 
-  def has_secure_password
-  end
+  #def has_secure_password
+  #end
 end
