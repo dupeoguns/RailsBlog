@@ -5,5 +5,5 @@ class Post < ApplicationRecord
     validates :content, presence: true 
     #validates :user_id, presence: true
 
-    before_save { self.email = email.downcase }
+    #before_save { self.email = email.downcase }
 end
